@@ -8,7 +8,7 @@
     animation: fadeIn 2s ease-in-out;
 }
 
-.about-section h1 {
+.about-section h1, .about-section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #2c3e50;
@@ -26,8 +26,31 @@
     animation: slideInLeft 1s ease-in-out;
 }
 
-.about-section p.founder-info {
+.founder-info, .team-member {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
     animation: slideInRight 1s ease-in-out;
+}
+
+.founder-photo, .team-photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.founder-details h2, .team-details h3 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.founder-details p, .team-details p {
+    font-size: 1.2em;
+    color: #7f8c8d;
 }
 
 /* Animations */

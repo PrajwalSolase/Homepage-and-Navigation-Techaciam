@@ -7,6 +7,13 @@
 
 .services-section h1 {
     font-size: 2.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.services-section .intro {
+    font-size: 1.2em;
+    margin-top: 40px;
     margin-bottom: 40px;
     color: white;
 }
@@ -18,6 +25,9 @@
     margin-bottom: 40px;
     padding: 20px;
     transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .service:hover {
@@ -25,28 +35,41 @@
 }
 
 .service img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .service-info {
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
+    text-align: left;
+    flex-grow: 1;
 }
 
 .service-info h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
     color: #34495e;
-    text-align: center;
 }
 
 .service-info p {
     font-size: 1.2em;
     color: #7f8c8d;
-    text-align: center;
+}
+
+.cta {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    font-size: 1.2em;
+}
+
+.cta p {
+    margin: 0;
 }
 
 /* Animation */
@@ -68,11 +91,14 @@
 @media (max-width: 768px) {
     .service {
         padding: 20px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .service img {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
     }
 
     .service-info h2 {
